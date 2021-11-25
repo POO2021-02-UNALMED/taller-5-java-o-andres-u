@@ -26,4 +26,8 @@ public class Zoologico {
                 .mapToInt(zona -> zona.getAnimales().size())
                 .sum();
     }
+
+    public String getNombre() {
+        return nombre;
+    }
 }
