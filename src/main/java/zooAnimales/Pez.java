@@ -42,4 +42,28 @@ public class Pez extends Animal {
         listado.add(bacalao);
         return bacalao;
     }
+
+    public static List<Pez> getListado() {
+        return listado;
+    }
+
+    public static void setListado(List<Pez> listado) {
+        Pez.listado = listado;
+    }
+
+    public String getColorEscamas() {
+        return colorEscamas;
+    }
+
+    public void setColorEscamas(String colorEscamas) {
+        this.colorEscamas = colorEscamas;
+    }
+
+    public int getCantidadAletas() {
+        return cantidadAletas;
+    }
+
+    public void setCantidadAletas(int cantidadAletas) {
+        this.cantidadAletas = cantidadAletas;
+    }
 }
