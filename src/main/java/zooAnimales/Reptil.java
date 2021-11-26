@@ -27,12 +27,12 @@ public class Reptil extends Animal {
     public String movimiento() {
         return "none";
     }
-
+    
     public void crearIguana() {
-
-    }
-
-    public void crearSerpiente() {
         
+    }
+    
+    public void crearSerpiente() {
+
     }
 }
