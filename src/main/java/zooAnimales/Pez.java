@@ -25,7 +25,7 @@ public class Pez extends Animal {
 
     @Override
     public String movimiento() {
-        return "none";
+        return "nadar";
     }
 
     public void crearSalmon() { }

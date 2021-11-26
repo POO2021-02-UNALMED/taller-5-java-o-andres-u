@@ -25,7 +25,7 @@ public class Reptil extends Animal {
 
     @Override
     public String movimiento() {
-        return "none";
+        return "reptar";
     }
     
     public void crearIguana() {

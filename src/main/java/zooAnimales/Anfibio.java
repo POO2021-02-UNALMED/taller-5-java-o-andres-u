@@ -25,7 +25,7 @@ public class Anfibio extends Animal {
 
     @Override
     public String movimiento() {
-        return "none";
+        return "saltar";
     }
 
     public void crearRana() { }
