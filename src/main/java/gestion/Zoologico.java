@@ -7,22 +7,22 @@ public class Zoologico {
 
     private String nombre;
     private String ubicacion;
-    private List<Zona> zonas;
+    private List<Zona> zona;
 
     public Zoologico(String nombre, String ubicacion) {
         this.nombre = nombre;
         this.ubicacion = ubicacion;
-        this.zonas = new ArrayList<>();
+        this.zona = new ArrayList<>();
     }
 
     public Zoologico() {}
 
     public void agregarZonas(Zona zona) {
-        zonas.add(zona);
+        this.zona.add(zona);
     }
 
     public int cantidadTotalAnimales() {
-        return zonas.stream()
+        return zona.stream()
                 .mapToInt(zona -> zona.getAnimales().size())
                 .sum();
     }
@@ -43,11 +43,11 @@ public class Zoologico {
         this.ubicacion = ubicacion;
     }
 
-    public List<Zona> getZonas() {
-        return zonas;
+    public List<Zona> getZona() {
+        return zona;
     }
 
-    public void setZonas(List<Zona> zonas) {
-        this.zonas = zonas;
+    public void setZona(List<Zona> zona) {
+        this.zona = zona;
     }
 }
