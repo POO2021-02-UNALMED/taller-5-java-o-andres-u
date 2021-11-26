@@ -24,7 +24,7 @@ public class Animal {
         return "desplazarse";
     }
 
-    public String totalPorTipo() {
+    public static String totalPorTipo() {
         return "Mamiferos: #\n" +
                 "Aves: #\n" +
                 "Reptiles: #\n" +
