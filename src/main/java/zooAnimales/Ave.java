@@ -18,7 +18,7 @@ public class Ave extends Animal {
 
     public Ave() { }
 
-    public int cantidadAves() {
+    public static int cantidadAves() {
         return halcones + aguilas;
     }
 

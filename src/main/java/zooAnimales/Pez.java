@@ -20,7 +20,7 @@ public class Pez extends Animal {
 
     public Pez() { }
 
-    public int cantidadPeces() {
+    public static int cantidadPeces() {
         return salmones + bacalaos;
     }
 

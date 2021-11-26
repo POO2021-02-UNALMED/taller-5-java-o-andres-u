@@ -20,7 +20,7 @@ public class Anfibio extends Animal {
 
     public Anfibio() { }
 
-    public int cantidadAnfibios() {
+    public static int cantidadAnfibios() {
         return ranas + salamandras;
     }
 

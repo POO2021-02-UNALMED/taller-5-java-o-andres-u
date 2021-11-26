@@ -10,12 +10,14 @@ public class Zoologico {
     private List<Zona> zona;
 
     public Zoologico(String nombre, String ubicacion) {
+        super();
         this.nombre = nombre;
         this.ubicacion = ubicacion;
-        this.zona = new ArrayList<>();
     }
 
-    public Zoologico() {}
+    public Zoologico() {
+        this.zona = new ArrayList<>();
+    }
 
     public void agregarZonas(Zona zona) {
         this.zona.add(zona);
