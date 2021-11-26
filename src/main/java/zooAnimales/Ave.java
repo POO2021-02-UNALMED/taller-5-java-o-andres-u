@@ -7,7 +7,7 @@ public class Ave extends Animal {
 
     public static int halcones;
     public static int aguilas;
-    private static List<Ave> listado = new ArrayList<>();
+    private final static List<Ave> listado = new ArrayList<>();
 
     private String colorPlumas;
 
@@ -19,7 +19,7 @@ public class Ave extends Animal {
     public Ave() { }
 
     public static int cantidadAves() {
-        return halcones + aguilas;
+        return listado.size();
     }
 
     @Override
@@ -41,19 +41,7 @@ public class Ave extends Animal {
         return aguila;
     }
 
-    public static List<Ave> getListado() {
-        return listado;
-    }
-
-    public static void setListado(List<Ave> listado) {
-        Ave.listado = listado;
-    }
-
     public String getColorPlumas() {
         return colorPlumas;
-    }
-
-    public void setColorPlumas(String colorPlumas) {
-        this.colorPlumas = colorPlumas;
     }
 }

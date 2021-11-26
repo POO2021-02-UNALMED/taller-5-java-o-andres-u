@@ -7,7 +7,7 @@ public class Pez extends Animal {
 
     public static int salmones;
     public static int bacalaos;
-    private static List<Pez> listado = new ArrayList<>();
+    private final static List<Pez> listado = new ArrayList<>();
 
     private String colorEscamas;
     private int cantidadAletas;
@@ -21,7 +21,7 @@ public class Pez extends Animal {
     public Pez() { }
 
     public static int cantidadPeces() {
-        return salmones + bacalaos;
+        return listado.size();
     }
 
     @Override
@@ -43,27 +43,11 @@ public class Pez extends Animal {
         return bacalao;
     }
 
-    public static List<Pez> getListado() {
-        return listado;
-    }
-
-    public static void setListado(List<Pez> listado) {
-        Pez.listado = listado;
-    }
-
     public String getColorEscamas() {
         return colorEscamas;
     }
 
-    public void setColorEscamas(String colorEscamas) {
-        this.colorEscamas = colorEscamas;
-    }
-
     public int getCantidadAletas() {
         return cantidadAletas;
-    }
-
-    public void setCantidadAletas(int cantidadAletas) {
-        this.cantidadAletas = cantidadAletas;
     }
 }

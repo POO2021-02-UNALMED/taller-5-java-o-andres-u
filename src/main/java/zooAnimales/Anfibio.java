@@ -7,7 +7,7 @@ public class Anfibio extends Animal {
 
     public static int ranas;
     public static int salamandras;
-    private static List<Anfibio> listado = new ArrayList<>();
+    private final static List<Anfibio> listado = new ArrayList<>();
 
     private String colorPiel;
     private boolean venenoso;
@@ -21,7 +21,7 @@ public class Anfibio extends Animal {
     public Anfibio() { }
 
     public static int cantidadAnfibios() {
-        return ranas + salamandras;
+        return listado.size();
     }
 
     @Override
@@ -43,27 +43,11 @@ public class Anfibio extends Animal {
         return salamandra;
     }
 
-    public static List<Anfibio> getListado() {
-        return listado;
-    }
-
-    public static void setListado(List<Anfibio> listado) {
-        Anfibio.listado = listado;
-    }
-
     public String getColorPiel() {
         return colorPiel;
     }
 
-    public void setColorPiel(String colorPiel) {
-        this.colorPiel = colorPiel;
-    }
-
     public boolean isVenenoso() {
         return venenoso;
-    }
-
-    public void setVenenoso(boolean venenoso) {
-        this.venenoso = venenoso;
     }
 }
